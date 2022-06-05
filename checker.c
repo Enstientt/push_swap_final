@@ -6,7 +6,7 @@
 /*   By: zessadqu <zessadqu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 10:55:22 by zessadqu          #+#    #+#             */
-/*   Updated: 2022/06/05 16:37:24 by zessadqu         ###   ########.fr       */
+/*   Updated: 2022/06/05 16:39:39 by zessadqu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,8 +67,6 @@ int	main(int argc, char **argv)
 	t_nums	*b;
 
 	a = NULL;
-	if (argc <= 1)
-		exit(0);
 	if (argc == 2)
 	{
 		argv = ft_split(argv[1], ' ', &argc);
@@ -78,6 +76,8 @@ int	main(int argc, char **argv)
 	else
 		great_list(argc, argv, &a, 1);
 	b = NULL;
+	if (argc <= 2)
+		exit (0);
 	if (a == NULL)
 		return (0);
 	grab_command(&a, &b);
