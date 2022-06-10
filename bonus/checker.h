@@ -6,7 +6,7 @@
 /*   By: zessadqu <zessadqu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 11:24:51 by zessadqu          #+#    #+#             */
-/*   Updated: 2022/06/05 16:20:31 by zessadqu         ###   ########.fr       */
+/*   Updated: 2022/06/10 08:27:56 by zessadqu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void		push(long long value, t_nums **a);
 long long	ft_atoi_digit_confirm(const char *str, t_nums **a);
 void		dup_check_c(t_nums *head, int nbr, t_nums **a);
 int			grab_command(t_nums **a, t_nums **b);
-int			ft_strncmp(const char *s1, const char *s2);
+int			ft_strcmp(const char *s1, const char *s2);
 int			check_sort_at_end(t_nums *nums, t_nums *b);
 
 #endif
